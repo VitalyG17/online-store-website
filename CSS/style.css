@@ -74,13 +74,18 @@ section {
 .cart {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
   background: var(--bg-color);
   box-shadow: -2px 0 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: var(--transition-time);
+}
+
+.cart.active {
+  right: 0;
 }
 
 .cart-title {
@@ -101,10 +106,6 @@ section {
 .cart-production-title {
   font-size: 1rem;
   text-transform: uppercase;
-}
-
-.cart-price {
-  font-weight: 500;
 }
 
 .cart-quantity {
