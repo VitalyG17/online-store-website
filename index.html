@@ -16,9 +16,28 @@
         <a href="/" class="logo">Ostore</a>
 
         <i class="bx bxs-shopping-bag-alt" id="cart-icon"></i>
+        <div class="cart">
+          <h2 class="cart-title">You cart</h2>
+          <div class="cart-content">
+            <div class="cart-box">
+              <img src="img/1.png" alt="" class="cart-img" />
+              <div class="detail-box">
+                <div class="cart-production-title">Iphone 15</div>
+                <div class="cart-price">95800 ₽</div>
+                <input type="number" value="1" class="cart-quantity" />
+              </div>
+              <i class="bx bxs-trash-alt cart-remove"></i>
+            </div>
+          </div>
+          <div class="total">
+            <div class="total-tittle">Total:</div>
+            <div class="total-price">0 ₽</div>
+          </div>
+          <button type="button" class="btn-buy">Buy now</button>
+          <i class="bx bx-x" id="close-cart"></i>
+        </div>
       </div>
     </header>
-
     <section class="shop container">
       <h2 class="section-title">Products</h2>
 
@@ -85,5 +104,7 @@
         </div>
       </div>
     </section>
+    
+    <script src="JS/script.js"></script>
   </body>
 </html>
