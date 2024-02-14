@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   scroll-padding-top: 2rem;
@@ -70,6 +70,11 @@ section {
 #cart-icon {
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+#cart-icon:hover {
+  color: var(--red-color);
+  transition: var(--transition-time);
 }
 .cart {
   position: fixed;
