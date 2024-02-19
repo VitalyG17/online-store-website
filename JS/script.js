@@ -2,6 +2,9 @@
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
 let closeCart = document.querySelector('#close-cart');
+let infoText = document.querySelectorAll('.info-hidden-text');
+let infoTexts = document.querySelectorAll('.info-hidden-text');
+let description = document.querySelector('.description');
 
 // Open
 cartIcon.onclick = () => {
@@ -69,7 +72,9 @@ function addProductToCart(title, price, image) {
   let cartShopBox = document.createElement('div');
   cartShopBox.classList.add('cart-box');
   let cartItems = document.getElementsByClassName('cart-content')[0];
-  let cartItemsNames = cartItems.getElementsByClassName('cart-production-title');
+  let cartItemsNames = cartItems.getElementsByClassName(
+    'cart-production-title'
+  );
   for (let i = 0; i < cartItemsNames.length; i++) {
     if (cartItemsNames[i].innerText == title) {
       alert('You have already add this item to cart');
@@ -134,3 +139,13 @@ function formatingPriceCard() {
     price.innerText = value.toLocaleString('ru-RU') + ' ₽';
   });
 }
+
+// Show description
+infoTexts.forEach((infoText) => {
+  infoText.addEventListener('click', function () {
+    let description = this.parentNode.querySelector('.description');
+    if (description) {
+      description.classList.toggle('show');
+    }
+  });
+});

@@ -16,6 +16,7 @@
   --text-color: #171427;
   --light-text-color: #2c2748;
   --bg-color: #fff;
+  --gray-color: #cccccc;
   --red-color: #b53838;
 
   --transition-time: 0.4s;
@@ -52,6 +53,19 @@ header {
   z-index: 100;
 }
 
+.header-menu a {
+  margin-left: 9rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.header-menu a:hover {
+  color: var(--red-color);
+  transition: var(--transition-time);
+}
+
 section {
   padding: 4rem 0 3rem;
 }
@@ -59,23 +73,26 @@ section {
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px 0;
 }
 
 .logo {
-  font-size: 1.1rem;
+  height: 50px;
+  width: 50px;
+  padding-left: rem;
 }
 
 #cart-icon {
   font-size: 1.5rem;
   cursor: pointer;
+  margin-left: 9rem;
 }
 
 #cart-icon:hover {
   color: var(--red-color);
   transition: var(--transition-time);
 }
+
 .cart {
   position: fixed;
   top: 0;
@@ -186,7 +203,8 @@ section {
   font-size: 1.5rem;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+  text-transform: uppercase;
 }
 
 .shop {
@@ -195,14 +213,17 @@ section {
 
 .shop-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(245px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   gap: 1.5rem;
 }
 .product-box {
+  padding: 10px;
+  padding-bottom: 2rem;
   position: relative;
 }
+
 .product-box:hover {
-  padding: 6px;
+  scale: 1.01;
   border: 1px solid var(--text-color);
   transition: var(--transition-time);
 }
@@ -235,6 +256,29 @@ section {
 }
 
 .add-cart:hover {
-  background: var(--light-text-color);
+  background: var(--red-color);
   transition: var(--transition-time);
+}
+
+.info-hidden-text .bx {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 28px;
+}
+
+.info-hidden-text .bx:hover {
+  color: var(--red-color);
+  transition: var(--transition-time);
+}
+
+.description {
+  display: none;
+}
+
+.description.show {
+  display: block;
+  padding-bottom: 1rem;
 }
