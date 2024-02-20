@@ -149,3 +149,17 @@ infoTexts.forEach((infoText) => {
     }
   });
 });
+
+// Open catalog menu
+let catalogNav = document.querySelector('#catalog');
+let closeCatalog = document.querySelector('#close-catalog');
+let catalog = document.querySelector('.catalog');
+
+catalogNav.onclick = (event) => {
+  event.preventDefault();
+  catalog.classList.add('active');
+};
+
+closeCatalog.onclick = () => {
+  catalog.classList.remove('active');
+};
