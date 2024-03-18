@@ -163,3 +163,36 @@ catalogNav.onclick = (event) => {
 closeCatalog.onclick = () => {
   catalog.classList.remove('active');
 };
+
+//Slider
+let slideIndex = 0;
+let slideTimer;
+
+showSlides();
+
+function showSlides() {
+  let slides = document.querySelectorAll('.slide');
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none';
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  if (slideIndex < 1) {
+    slideIndex = slides.length;
+  }
+  slides[slideIndex - 1].style.display = 'block';
+  slideTimer = setTimeout(showSlides, 10000);
+}
+
+document.querySelector('.prev').addEventListener('click', function () {
+  clearTimeout(slideTimer); 
+  slideIndex -= 2;
+  showSlides();
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+  clearTimeout(slideTimer);
+  showSlides();
+});

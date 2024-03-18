@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale</title>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="/" class="logo"> <img src="img/logo/logo.png" alt="W-shop logo"/></a>
+        <div class="header-menu">
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="#" id="catalog">Catalog</a>
+            <a href="sale.html">Sale</a>
+            <a href="products.html">Products</a>
+          </nav>
+        </div>
+
+        <i class="bx bxs-shopping-bag-alt" id="cart-icon"></i>
+        <div class="cart">
+          <h2 class="cart-title">You cart</h2>
+          <div class="cart-content"></div>
+          <div class="total">
+            <div class="total-tittle">Total:</div>
+            <div class="total-price">0 ₽</div>
+          </div>
+          <button type="button" class="btn-buy">Buy now</button>
+          <i class="bx bx-x" id="close-cart"></i>
+
+          <div class="catalog">
+            <h2 class="catalog-title">Catalog</h2>
+            <div class="catalog-content">
+              <ul class="catalog-name-production">
+                <li>
+                  <img src="img/catalog-icons/appliances.png" alt="appliances" /><a
+                    href="/"
+                    >Appliances</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/smart.png" alt="smartphones" /><a href="/">
+                    Smartphones and photographic equipment</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/tv.png" alt="TV" /><a href="/"
+                    >TV, consoles and audio</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/pc.png" alt="PC" /><a href="/"
+                    >PC, laptops, peripherals</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/component.png" alt="PC components" /><a
+                    href="/"
+                    >PC components</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/network.png" alt="Network hardwares" /><a href="/"
+                    >Network hardwares</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/accessories.png" alt="Accessories" /><a
+                    href="/"
+                    >Accessories</a
+                  >
+                </li>
+                <li>
+                  <img src="img/catalog-icons/oficce.png" alt="Office and furniture" /><a href="/"
+                    >Office and furniture</a
+                  >
+                </li>
+                <li>
+                  <img
+                    src="img/catalog-icons/recreation_and_entertainment.png"
+                    alt="Recreation and entertainment"
+                  /><a href="/">Recreation and entertainment</a>
+                </li>
+              </ul>
+              <i class="bx bx-x" id="close-catalog"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid-container">
+      <div class="grid-item span-2"><img src="img/sale-grid/sale1.png" alt="Discount on Iphones up to 15%" /></div>
+      <div class="grid-item"><img src="img/sale-grid/sale3.png" alt="Pre-order iPhone 15 pro max" /></div>
+      <div class="grid-item"><img src="img/sale-grid/sale4.png" alt="Headphones as a gift"/></div>
+      <div class="grid-item"><img src="img/sale-grid/sale5.png" alt="Marshall and nothing else"/></div>
+      <div class="grid-item"><img src="img/sale-grid/sale6.png" alt="Gift when buying a tablet"/></div>
+      <div class="grid-item"><img src="img/sale-grid/sale7.png" alt="Headphones with benefits up to 30%"/></div>
+      <div class="grid-item span-2"><img src="img/sale-grid/sale2.png" alt="Discount on Apple Watch SE2"/></div>
+      <div class="grid-item row-2"><img src="img/sale-grid/sale8.png" alt="Floor standing speakers with 10% discount"/></div>
+      <div class="grid-item"><img src="img/sale-grid/sale9.png" alt="Exclusive selection of graphics cards"/></div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="footer-data">
+            <h4>Navigation</h4>
+            <ul class="info-footer">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="sale.html">Sale</a></li>
+              <li><a href="products.html">Products</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-data">
+            <h4>Working hours</h4>
+            <ul class="info-footer">
+              <li>Belgorod, st. Pobeda, 104</li>
+              <li>mon-sun: 10:00 - 22:00</li>
+            </ul>
+          </div>
+
+          <div class="footer-data">
+            <h4>Contacts</h4>
+            <ul class="info-footer">
+              <li><a href="tel:89515489600">8 951-548-96-00</a></li>
+              <li><a href="tel:89805532388">8 980-553-23-88</a></li>
+              <li><a href="mailto:electronic31@yandex.ru">electronic31@yandex.ru</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-data">
+            <h4>Follow us</h4>
+            <ul class="footer-icons">
+              <a href="/"><img src="img/logo/logo_vk.png" alt="VK Logo"/></a>
+              <a href="/"><img src="img/logo/logo_zen.png" alt="Zen Logo"/></a>
+              <a href="/"><img src="img/logo/logo_tg.png" alt="Telegram Logo"/></a>
+              <a href="/"><img src="img/logo/logo_gh.png" alt="GitHab Logo"/></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
